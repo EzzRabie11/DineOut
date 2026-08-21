@@ -113,7 +113,7 @@ header .offcanvas ul.icons li:hover a i {
     color: var(--main-color);
 }
 header .carousel-inner .slide1 .bg {
-    background-image: url("../images_dineOut/images/home-bg.jpg");
+    background-image: url("../images/image/home-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,7 +193,7 @@ transform: scale(1.2);
 }
 /* * slide 2 begin */ */
 header .slide2 .bg {
-    background-image: url("../images_dineOut/images/slider-bg1.jpg");
+    background-image: url("../images/image/slider-bg1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ header .slide2 .part1 .menu-button {
 /* home slide2 */
 /* home slide3 */
 header .carousel-inner .slide3 .bg {
-    background-image: url("../images_dineOut/images/tm_bg.jpg");
+    background-image: url("../images/image/tm_bg.jpg");
     position: absolute;
     background-position: center;
     background-size: cover;
@@ -403,7 +403,7 @@ opacity: 1;
 #About .part2 .item {
     width: 600px;
    height: 300px;
-    background-image: url("../images_dineOut/images/about-img.jpg");
+    background-image: url("../images/image/about-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -682,7 +682,7 @@ background-image: linear-gradient(to right,#294E5D,#1C343C);
 }
 #Chefs .box .CardBg {
     border-radius: 10px;
-    background-image: url("../images_dineOut/images/team/Chef1.png");
+    background-image: url("../images/image/team/Chef1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -690,10 +690,10 @@ background-image: linear-gradient(to right,#294E5D,#1C343C);
     transform: skewY(0deg);
 }
 #Chefs .col:nth-of-type(2) .box .CardBg{
-    background-image: url("../images_dineOut/images/team/Chef2.png");
+    background-image: url("../images/image/team/Chef2.png");
 }
 #Chefs .col:nth-of-type(3) .box .CardBg{
-    background-image: url("../images_dineOut/images/team/Chef3.png");
+    background-image: url("../images/image/team/Chef3.png");
 }
 #Chefs .box:hover .CardBg{
 transform: skewY(5deg);
@@ -729,13 +729,13 @@ transform: skewY(5deg);
 }
 /*order  */
 #Order {
-    background-image: url("../images_dineOut/images/bg_wood.jpg");
+    background-image: url("../images/image/bg_wood.jpg");
     background-position: center;
     background-size: cover;
 }
 #Order .part1 form {
     width: 400px;
-    background-image: url("../images_dineOut/images/tm_bg.jpg");
+    background-image: url("../images/image/tm_bg.jpg");
      background-position: center;
     background-size: cover;
     border-radius: 10px;
