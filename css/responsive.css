@@ -63,10 +63,6 @@ header .slide2 .part1 .H1Text {
         overflow-y: hidden;
         margin: auto;
 }   
- #Menu #v-pills-tab .nav-item {
-        flex: 0 0 105px;
-        padding: 0;
-    }
 #Menu #v-pills-tab .nav-item:first-child .nav-link {
         border-radius: 6px 0 0 6px;
  }
@@ -74,11 +70,10 @@ header .slide2 .part1 .H1Text {
         border-radius: 0 6px 6px 0;
 }
 #Menu #v-pills-tab .nav-item button.active::after {
-        top: auto;
-        right: auto;
-        bottom: -15px;
+        bottom: 0px;
         left: 50%;
-        transform: translateX(-50%);
+        top: auto;
+        transform: translateX(-50%) rotate(180deg);
         border-top: 15px solid white;
         border-right: 15px solid transparent;
         border-left: 15px solid transparent;
@@ -197,7 +192,7 @@ header .slide2 .part2 .pizza-cont {
    height: 280px;
 }
 #Testimonials .box .item .content h4 {
-    font-size: 18px;
+    font-size: 16px;
 }
 #Menu .tab-content .tab-pane .item {
     width: 240px;
