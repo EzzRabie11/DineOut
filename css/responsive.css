@@ -57,8 +57,8 @@ header .slide2 .part1 .H1Text {
 }
 
 #Menu #v-pills-tab {
-        width: 100%;
         flex-wrap: nowrap;
+        flex-direction: row;
         overflow-x: hidden;
         overflow-y: hidden;
         margin: auto;
@@ -67,10 +67,6 @@ header .slide2 .part1 .H1Text {
         flex: 0 0 105px;
         padding: 0;
     }
-#Menu #v-pills-tab .nav-item button {
-        padding: 25px 0;
-}
-
 #Menu #v-pills-tab .nav-item:first-child .nav-link {
         border-radius: 6px 0 0 6px;
  }
@@ -134,16 +130,11 @@ header .slide2 .part1 .H1Text {
 #About .part2 .item {
    height: 240px;
 }
- #Menu #v-pills-tab .nav-item button {
-        padding: 20px 0;
-    }
-
     #Menu #v-pills-tab .nav-item button img {
         width: 40px;
         height: 40px;
     }
 }
-
 @media (min-width: 577px) and (max-width: 1300px) {
     header .carousel-inner .slide1 .content p{
     width: 80%;
@@ -168,9 +159,6 @@ header .slide2 .part1 .content{
 #Testimonials p {
     font-size: 16px;
 }
- #Menu #v-pills-tab .nav-item button {
-        padding: 30px 0;
-    }
 #Menu .tab-content .tab-pane .item {
     width: 280px;
 }
@@ -244,16 +232,11 @@ header .slide2 .part2 .pizza-cont {
  #Menu #v-pills-tab {
         flex-wrap: wrap;
         overflow: visible;
-        width: 5%;
+        flex-direction: column;
     }
     #Menu #v-pills-tab .nav-item {
-        width: auto;
-        flex-wrap: wrap;
         overflow: visible;
-    }
-
-    #Menu #v-pills-tab .nav-item button {
-        padding: 40px 0;
+        width: 80px;
     }
 #Menu #v-pills-tab .nav-item:first-child .nav-link {
         border-radius: 6px 6px 0 0;
@@ -266,9 +249,7 @@ header .slide2 .part2 .pizza-cont {
         right: -1px;
         bottom: auto;
         left: auto;
-
         transform: translateY(-50%);
-
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         border-right: 15px solid white;
