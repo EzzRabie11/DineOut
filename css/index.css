@@ -30,7 +30,6 @@ header .offcanvas .offcanvas-header i:hover{
 header .offcanvas .LogoContainer {
     width: 100px;
 }
-
 header .offcanvas .nav-links li {
     transition-duration: 1s;
 }
@@ -48,7 +47,6 @@ header .offcanvas .nav-links li:hover a
     color:var(--main-color);
 }
 header .offcanvas ul.icons {
-    column-gap: 10px;
     position: relative;
 }
 header .offcanvas ul.icons li {
@@ -60,32 +58,37 @@ header .offcanvas ul.icons li {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-duration: 2s;
+    transition-duration: 1s;
     opacity: 0;
-    position: absolute;
-    left: 0px;
-    }
-
+    position: relative;
+    transform: translateX(0px);
+    left: 0;
+}
 header .offcanvas ul.icons li:nth-of-type(1){
     z-index: 4;
 }
 header .offcanvas ul.icons li:nth-of-type(2){
-transition-delay: .4s;
+transition-delay: 1s;
+transform: translateX(-100%);
 }
 header .offcanvas ul.icons li:nth-of-type(3){
-transition-delay: .2s;
+transition-delay: .5s;
+transform: translateX(-200%);
+}
+header .offcanvas ul.icons li:nth-of-type(4){
+transform: translateX(-300%);
 }
 header .offcanvas.show ul.icons li {
     opacity: 1;
 }
 header .offcanvas.show ul.icons li:nth-of-type(2){
-left: 45px;
+transform: translateX(40%);
 }
 header .offcanvas.show ul.icons li:nth-of-type(3){
-left: 90px;
+transform: translateX(80%);
 }
 header .offcanvas.show ul.icons li:nth-of-type(4){
-left: 135px;
+transform: translateX(120%);
 }
 
 header .offcanvas ul.icons li a {
@@ -112,6 +115,7 @@ color: #1DA1F2;
 header .offcanvas ul.icons li:hover a i {
     color: var(--main-color);
 }
+/* offcanvas end */
 header .carousel-inner .slide1 .bg {
     background-image: url("../images/image/home-bg.jpg");
     background-position: center;
@@ -155,12 +159,14 @@ header .carousel-inner .slide1 .content p{
 }
 header .carousel-inner .slide1 .content button {
     transition-delay: .4s;
+    transform: scale(0);
 }
-
+header .carousel-inner .slide1.active .content button {
+    transform: scale(1);
+}
 header .carousel-inner .slide1.active .content > *{
 opacity: 1;
 }
-
 header button.prev ,
 header button.next {
     display: block;
@@ -191,7 +197,7 @@ header button.next:hover i {
 color: #F1B601;
 transform: scale(1.2);
 }
-/* * slide 2 begin */ */
+/* * slide 2 begin */ 
 header .slide2 .bg {
     background-image: url("../images/image/slider-bg1.jpg");
     background-position: center;
@@ -202,7 +208,7 @@ header .slide2 .bg {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 5;
+    z-index: 0;
 }
 header .slide2 .bg::after {
     background-color: rgba(0, 0, 0, .7);
@@ -225,7 +231,7 @@ header .slide2 .part1 .pizzaTextImageCont {
 header .slide2.active .part1 .pizzaTextImageCont {
     top: 0;
     transform: translateY(50px);
-        } 
+} 
 header .slide2 .part1 .textContainer {
     transform: scaleX(0);
     transition-duration: 1s;
@@ -260,7 +266,7 @@ header .slide2 .part1 .number {
     font-size: 25px;
 }
 header .slide2 .part2 .pizza-cont {
-    width: 450px;
+    width: 600px;
     animation-name: pizzaRotate;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -348,7 +354,6 @@ transform: translateY(100%);
 transition-duration: 1s;
 opacity: 0;
 }
-
 header .carousel-inner .slide3 .content .icons:nth-of-type(2) .iconAndH5{
     transition-delay: .2s;
 }
@@ -433,8 +438,18 @@ opacity: 1;
 /* Testimonials */
 #Testimonials {
     overflow: hidden;
+    position: relative;
 }
-/* #Testimonials::before {
+#Testimonials video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+ #Testimonials::before { 
     content: "";
     display: block;
     position: absolute;
@@ -444,14 +459,11 @@ opacity: 1;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .7);
-} */
+} 
 #Testimonials .container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    position: relative; 
     z-index: 2;
+    width: 100%;
     margin: auto;
 }
 #Testimonials h2 {
@@ -506,20 +518,31 @@ opacity: 1;
 #Menu {
 background-image: linear-gradient(to right,#294E5D,#1C343C);
 }
+#Menu #v-pills-tab {
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
 #Menu .header img {
     width: 90px;
     height: auto;
 }
+#Menu #v-pills-tab .nav-item {
+    width: 100px;
+    height: 100px;
+}
 #Menu #v-pills-tab .nav-item button {
     position: relative;
     width: 100%;
-    padding: 40px 0px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
      background-image: radial-gradient(#294E5D,#1C343C);
-    border: 1px solid #eee;
+    border: 1px solid white;
     border-radius: 0;
     color: white;
     transition: 0.3s;
